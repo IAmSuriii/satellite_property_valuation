@@ -4,6 +4,12 @@ A multimodal machine learning project that predicts residential property prices 
 
 ---
 
+## Limitations
+
+Due to satellite image download constraints and API usage limits, satellite imagery was collected for a subset of the dataset. As a result, the multimodal model was trained and evaluated only on properties with available images. Specifically, images were downloaded for approximately **3,000 properties** in both the training and test sets. Consequently, the final `24114073_final.csv` contains predictions only for these corresponding property IDs.
+
+---
+
 ## 📌 Project Overview
 
 Traditional property valuation models rely primarily on tabular attributes such as size, location, and neighborhood statistics. This project extends that approach by integrating satellite imagery, enabling the model to capture visual environmental cues such as surrounding land use, green cover, road density, and proximity to water.
@@ -167,12 +173,6 @@ The multimodal model consistently outperforms the tabular-only baseline, demonst
 ## 🔍 Model Explainability
 
 Grad-CAM is used to visualize which regions of satellite images influence the model’s predictions. The CNN focuses on spatially coherent regions, indicating that environmental context plays a meaningful role in price estimation.
-
----
-
-## ⚠️ Limitations
-
-Due to satellite image download constraints and API usage limits, satellite imagery was collected for a subset of the dataset. As a result, the multimodal model was trained and evaluated only on properties with available images. Specifically, images were downloaded for approximately **3,000 properties** in both the training and test sets. Consequently, the final `submission.csv` contains predictions only for these corresponding property IDs.
 
 ---
 
