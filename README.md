@@ -1,4 +1,4 @@
-# 🛰️ Satellite Property Valuation
+#  Satellite Property Valuation
 
 A multimodal machine learning project that predicts residential property prices by combining structured tabular data with satellite imagery. The project demonstrates how environmental and spatial context extracted from satellite images can enhance traditional real-estate valuation models.
 
@@ -10,7 +10,7 @@ Due to satellite image download constraints and API usage limits, satellite imag
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Traditional property valuation models rely primarily on tabular attributes such as size, location, and neighborhood statistics. This project extends that approach by integrating satellite imagery, enabling the model to capture visual environmental cues such as surrounding land use, green cover, road density, and proximity to water.
 
@@ -24,7 +24,7 @@ The project compares a **tabular-only baseline** against a **tabular + satellite
 
 ---
 
-## 🧱 Project Structure
+##  Project Structure
 ```
 satellite_property_valuation/
 │
@@ -48,7 +48,7 @@ satellite_property_valuation/
 
 ---
 
-## 🧪 Dataset Description
+## Dataset Description
 
 ### Tabular Data
 
@@ -67,7 +67,7 @@ Satellite images are fetched programmatically using latitude and longitude coord
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 Follow the steps below **in order**.
 
@@ -159,7 +159,7 @@ id,predicted_price
 
 ---
 
-## 📊 Results Summary
+## Results Summary
 
 | Model | RMSE ↓ | R² ↑ |
 |------|--------|------|
@@ -170,13 +170,13 @@ The multimodal model consistently outperforms the tabular-only baseline, demonst
 
 ---
 
-## 🔍 Model Explainability
+##  Model Explainability
 
 Grad-CAM is used to visualize which regions of satellite images influence the model’s predictions. The CNN focuses on spatially coherent regions, indicating that environmental context plays a meaningful role in price estimation.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Data Handling:** Pandas, NumPy  
 - **Deep Learning:** PyTorch  
@@ -188,6 +188,6 @@ Grad-CAM is used to visualize which regions of satellite images influence the mo
 
 ---
 
-## ✅ Key Takeaway
+##  Key Takeaway
 
 This project demonstrates that **multimodal learning**, combining tabular data with satellite imagery, can s
